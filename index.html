@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Kelvin's Portfolio Website</title>
+        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+        <link rel="stylesheet" type="text/css" href="./CSS/sample_portfolio.css">
+    </head>
+
+    <!-- Body -->
+    <body class="Background">
+
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#LinkedIn">LinkedIn</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <!-- Background video -->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <!-- Replace this file with your own techy video in /images/video/ -->
+                <source src="./Videos/typingbackground.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Kelvin's Portfolio</h1>
+            <strong>
+                <p class="center quote">
+                    <q>Those who can imagine anything, can create the impossible.
+                        <br>Sometimes it is the people no one imagines anything of 
+                        <br>who do the things that no one can imagine.
+                    </q>
+                    <br> -Alan Turing<br>
+                    <br>
+                    My name is Kelvin. Welcome to my portfolio website.
+                    <br>
+                    <br>On it, I'll share my background, projects, and where to find me online.
+                    <br>
+                    <br>Thanks for checking it! <output></output> Enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!-- Slideshow section -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Img/portfoliopic.png" alt="Picture of Kelvin placeholder">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Img/webdev_stacklogos.png" alt="HTML CSS JavaScript">
+                        <div class="text">I build with:<br>HTML, CSS, JavaScript</div>
+                    </div>
+
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Img/pythonlogo.jpg" alt="Python">
+                        <div class="text">And I'm learning & building with Python.</div>
+                    </div>
+
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Img/images.png" alt="C# and .NET">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC</div>
+                    </div>
+
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Img/sql.png" alt="SQL and Database">
+                        <div class="text">Back-end development, databases, and SQL</div>
+                    </div>
+
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Img/email.png" alt="Coding">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <br>
+
+                <!-- Slideshow dots -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2">
+                <img src="./Img/laptopimage.jpg" alt="Laptop">
+            </div>
+
+            <!-- Right column -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I'm Kelvin, a full-stack developer who loves building real projects and learning by doing.
+                    <br><br>
+                    My skills include web development and programming, including HTML, CSS, JavaScript, SQL, Python, C# and more.
+                    <br><br>
+                    I'm always open to opportunities, collaboration, and feedback. I would love to work with you on your project. <a onclick="openForm()" class="contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!-- Projects section -->
+        <section class="Project_Section" id="Projects">
+            <div class="Project_Wrap">
+                <h1>C# Projects</h1>
+                <p class="Project_Intro">
+                    These projects were built using C#, .NET, ASP.NET MVC, Entity Framework, and core object-oriented programming concepts.
+                </p>
+
+                <div class="Project_Grid">
+                    <article class="Project_Card">
+                        <h2><a href="https://github.com/KelvinE-23/The-Tech-Academy-Basic-C-Sharp-Projects/tree/main/CarInsurance" target="_blank" rel="noopener noreferrer">Car Insurance</a></h2>
+                        <p>
+                            An ASP.NET MVC web application that mimics a car insurance quote website. It accepts policy information, stores insuree records with Entity Framework Core, calculates quotes using business rules, and includes an admin page for viewing submitted quotes.
+                        </p>
+                    </article>
+
+                    <article class="Project_Card">
+                        <h2><a href="https://github.com/KelvinE-23/The-Tech-Academy-Basic-C-Sharp-Projects/tree/main/ConsoleApp_Assignment_1" target="_blank" rel="noopener noreferrer">Console App Assignment 1</a></h2>
+                        <p>
+                            A console application that demonstrates boolean comparisons with loop control. It uses both a while loop and a do while loop to show how conditions determine when code continues or stops.
+                        </p>
+                    </article>
+
+                    <article class="Project_Card">
+                        <h2><a href="https://github.com/KelvinE-23/The-Tech-Academy-Basic-C-Sharp-Projects/tree/main/MathParameterConsoleApp" target="_blank" rel="noopener noreferrer">Math Parameter Console App</a></h2>
+                        <p>
+                            A console application that demonstrates method parameters. It defines a method that accepts two integers, performs a math operation on the first number, displays the result, and displays the second number.
+                        </p>
+                    </article>
+
+                    <article class="Project_Card">
+                        <h2><a href="https://github.com/KelvinE-23/The-Tech-Academy-Basic-C-Sharp-Projects/tree/main/EmployeeOperatorOverload" target="_blank" rel="noopener noreferrer">Operator Overload</a></h2>
+                        <p>
+                            A C# project that overloads the == and != operators for an Employee class. Employee objects are compared by Id, with Equals() and GetHashCode() also overridden for consistent equality behavior.
+                        </p>
+                    </article>
+
+                    <article class="Project_Card">
+                        <h2><a href="https://github.com/KelvinE-23/The-Tech-Academy-Basic-C-Sharp-Projects/tree/main/Polymorphism_Assignment" target="_blank" rel="noopener noreferrer">Polymorphism Assignment</a></h2>
+                        <p>
+                            A console application demonstrating abstraction, inheritance, interfaces, and polymorphism. It uses an abstract Person class, an Employee class, and an IQuittable interface to call Quit() through an interface reference.
+                        </p>
+                    </article>
+
+                    <article class="Project_Card">
+                        <h2><a href="https://github.com/KelvinE-23/The-Tech-Academy-Basic-C-Sharp-Projects/tree/main/StudentDatabase_ConsoleApp" target="_blank" rel="noopener noreferrer">Student Database Console App</a></h2>
+                        <p>
+                            A basic Entity Framework console app with Student and Grade entity classes, a SchoolContext database context, and code that inserts a student record into the database.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub section -->
+        <div class="Row" id="GitHub">
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>You can view my C# coding projects on GitHub here:</p>
+                <p class="center">
+                    <a href="https://github.com/KelvinE-23/The-Tech-Academy-Basic-C-Sharp-Projects" target="_blank" rel="noopener noreferrer">
+                        KelvinE-23 C# Projects
+                    </a>
+                </p>
+            </div>
+
+            <!-- Right column -->
+            <div class="Column_2">
+                <a href="https://github.com/KelvinE-23/The-Tech-Academy-Basic-C-Sharp-Projects" target="_blank" rel="noopener noreferrer">
+                    <img src="./Img/githublogo.jpg" alt="GitHub logo">
+                </a>
+            </div>
+        </div>
+
+        <!-- LinkedIn section (required link added) -->
+        <div class="Row" id="LinkedIn">
+            <!-- Left column -->
+            <div class="Column_2">
+                <!-- Placeholder image (you can swap later) -->
+                <img src="./Img/portfoliopic2.png" alt="LinkedIn placeholder">
+            </div>
+
+            <!-- Right column -->
+            <div class="Column_1">
+                <h1>LinkedIn</h1>
+                <p>Connect with me on LinkedIn:</p>
+                <p class="center">
+                    <!-- Replace the href with your real LinkedIn URL -->
+                    <a href="https://www.linkedin.com/in/kelvinkessilfie" target="_blank" rel="noopener noreferrer">
+                        Kelvin on LinkedIn
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+
+            <div class="form-popup" id="myForm" ondblclick="closeForm()">
+                <form action="https://formspree.io/f/mgolweao" method="POST" class="form-container">
+                    <h1>Contact</h1>
+
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Type your phone number here" name="phone">
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <p class="center">&copy; 2026 Kelvin Essilfie | Portfolio Website</p>
+        </footer>
+
+        <script src="./JS/sample_portfolio.js"></script>
+    </body>
+
+</html>
